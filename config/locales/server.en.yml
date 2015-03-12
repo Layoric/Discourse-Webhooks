@@ -6,4 +6,4 @@ en:
     webhooks_verify_ssl: 'Uncheck this to disable SSL verification for webhook HTTPS requests. NOT RECOMMENDED.'
     webhooks_include_api_key: 'Include the "All Users" API key as a parameter to allow verification of the source of the webhook.'
   login:
-    wait_approval: "Thanks for signing up. If your email is <em>not</em> already registered with us, please register it at <a href="https://servicestack.net/account/support">on the ServiceStack website</a>, this is required to be able to post on this forum. <strong>This forum is for ServiceStack customers only</strong>.'
+    wait_approval: 'Thanks for signing up. If your email is <em>not</em> already registered with us, please register it at <a href="https://servicestack.net/account/support">on the ServiceStack website</a>, this is required to be able to post on this forum. <strong>This forum is for ServiceStack customers only</strong>.'
