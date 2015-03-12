@@ -1,0 +1,26 @@
+<div id='simple-container'>
+  <span style="font-size: 16px; line-height: 24px;"><%= @message.html_safe %></span>
+</div>
+<script>
+var request = new XMLHttpRequest();
+request.open('GET', 'http://exampleapp.layoric.org/hello/<%= @user.email %>', true);
+
+request.onload = function() {
+  if (request.status >= 200 && request.status < 400) {
+    // Success!
+    //var data = JSON.parse(request.responseText);
+	alert(request.responseText);
+  } else {
+    // We reached our target server, but it returned an error
+	alert('Error from server.');
+	console.log(request);
+  }
+};
+
+request.onerror = function() {
+  // There was a connection error of some sort
+  alert('Connection error');
+};
+
+request.send();
+</script>
